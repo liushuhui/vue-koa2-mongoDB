@@ -9,6 +9,8 @@ router.get('/', async(ctx) => {
 router.post('/register', async(ctx) => {
     let user = mongoose.model('User');
     let newUser = new user(ctx.request.body);
+    console.log('---user----', user);
+    console.log('---newUser---', newUser);
     await newUser.save().then(() => {
         ctx.body = {
             code: 200,

@@ -3,6 +3,7 @@ const dbUrl = 'mongodb://localhost/smileVus';
 const glob = require('glob');
 const {resolve} = require('path');
 
+//加载模型js 
 exports.initSchema = () => {
     glob.sync(resolve(__dirname, './schema', '**/*.js')).forEach(require);
 }

@@ -29,7 +29,7 @@
 
 <script>
 import axios from "axios";
-import url from "@/serviceAPI.config.js";
+import url from "@/serviceApi.config.js";
 import { Toast } from "vant";
 export default {
   data() {

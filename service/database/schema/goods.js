@@ -27,6 +27,6 @@ const goodsSechmas = new goodsSechma({
     IS_RECOMMEND:Number,
     PICTURE_COMPERSS_PATH:String
 
-}, {collections: 'goodswe'})
+}, {collections: 'goods'})
 
 mongoose.model('goods', goodsSechmas)

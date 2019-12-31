@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^2.0.1",
     "cookies": "^0.8.0",
     "glob": "^7.1.6",
     "http-assert": "^1.4.1",

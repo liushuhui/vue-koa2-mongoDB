@@ -10,6 +10,7 @@ router.get('/insertAllGoodsInfo', async(ctx) => {
         const goods = mongoose.model('goods');
         Data.map((value) => {
             let newGoods = new goods(value);
+            console.log('newGoods', newGoods);
             newGoods.save().then(() => {
                 count++;
                 console.log('插入数据成功'+ count);
@@ -21,3 +22,4 @@ router.get('/insertAllGoodsInfo', async(ctx) => {
     })
     ctx.body = '插入数据中'
 })
+module.exports = router;

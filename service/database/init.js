@@ -10,7 +10,7 @@ exports.initSchema = () => {
 
 exports.connect = () => {
   // 连接数据库
-  mongoose.connect(dbUrl);
+  mongoose.connect(dbUrl, { useNewUrlParser: true , useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false});
   let maxConnectTime = 0; 
 
   return new Promise((resolve, reject) => {

@@ -73,7 +73,7 @@ export default {
             console.log('response', res);
             if (res.data.code === 200) {
                 Toast.success(res.data.msg);
-                this.$router.push('/');
+                this.$router.push('/shopingMall');
             } else {
                 this.openLoading = false;
                 Toast.fail(res.data.msg.errmsg);

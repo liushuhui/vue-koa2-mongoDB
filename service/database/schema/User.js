@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let objectId = Schema.Types.ObjectId;
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const SAIT_WORK_FACTORY = 10;
 
 //创建用户模型

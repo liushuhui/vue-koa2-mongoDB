@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     goGoodsPage() {
-        this.$router.push({path: '/register', query: {goodsId: this.goodsId}})
+        this.$router.push({path: '/goods', query: {goodsId: this.goodsId}})
     }
   }
 };

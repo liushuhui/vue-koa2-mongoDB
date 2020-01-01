@@ -7,10 +7,17 @@ import main from '@/components/page/main'
 import cart from '@/components/page/cart'
 import categoryList from '@/components/page/categoryList'
 import member from '@/components/page/member'
+import goods from '@/components/page/goods'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      redirect: {
+        name: main
+      }
+    },
     {
       path: '/main',
       name: main,
@@ -47,6 +54,11 @@ export default new Router({
       path: '/login',
       name: login,
       component: login
+    },
+    {
+      path: '/goods',
+      name: goods,
+      component: goods
     }
   ]
 })
